@@ -1,0 +1,10 @@
+[Unit]
+Description=Check for Zoom updates
+After=network.target
+
+[Service]
+User=root
+ExecStart=/opt/zoom/zoom_update_sangha.sh
+
+[Install]
+WantedBy=default.target

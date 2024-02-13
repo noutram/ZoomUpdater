@@ -1,0 +1,6 @@
+Package: zoom-update-sangha
+Version: 1.0
+Maintainer: Nicholas Outram <nicholas@outram.org>
+Architecture: amd64
+Description: Adds scripts to automatically update the zoom client daily
+

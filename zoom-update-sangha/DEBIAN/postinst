@@ -1,0 +1,12 @@
+#!/bin/bash
+#Permissions
+chmod +x /opt/zoom/zoom_update_sangha.sh
+chmod 644 /etc/systemd/system/zoom_update_sangha.service
+chmod 644 /etc/systemd/system/zoom_update_sangha.timer
+#Enable Services and Start
+systemctl enable zoom_update_sangha.timer
+systemctl start zoom_update_sangha.timer
+echo "run or update by running the following script:"
+echo "/opt/zoom/zoom_update_sangha.sh"
+echo "It should also run automatically once a day"
+
